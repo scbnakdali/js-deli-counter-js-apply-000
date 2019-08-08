@@ -3,13 +3,15 @@ var katzDeliLine = [];
 
 var katzdDeli = ['Ada', 'Grace', 'Kent'];
 
-function takeANumber(katzDeliLine, name) {
-  katzDeliLine.push(name);
-  return 'Welcome, ' + name + '. You are number ' + katzDeliLine.length + ' in line.';
-}
+// function takeANumber(katzDeliLine, name) {
+//   katzDeliLine.push(name);
+//   return 'Welcome, ' + name + '. You are number ' + katzDeliLine.length + ' in line.';
+// }
 
+var ticket = 0
 function takeANumber(katzDeliLine) {
-  katzDeliLine
+  katzDeliLine.push(++ticket);
+  return 'Welcome you have ticket number ' + katzDeliLine.length
 }
 
 function currentLine(katzDeliLine) {
